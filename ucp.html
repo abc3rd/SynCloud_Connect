@@ -1,4 +1,3 @@
-cat > ucp.html <<'EOF'
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,25 +10,75 @@ cat > ucp.html <<'EOF'
     gtag('config', 'G-SNLF60E7LE');
   </script>
 
+ <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5F45BBX4');</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Favicons (Hurricane logo) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <meta name="theme-color" content="#0b0b0f" />
 
+  <!-- =========================
+       SEO / Metadata
+  ========================== -->
   <title>Universal Command Protocol (UCP) | Intent Infrastructure by Omega UI, LLC</title>
   <meta name="description" content="Universal Command Protocol (UCP) is intent infrastructure that shifts operational AI from prompts to commands—improving consistency, governance, and cost efficiency. Patent pending." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-  <link rel="canonical" href="https://ucp.omegaui.com" />
+  <link rel="canonical" href="https://syncloudconnect.com/ucp.html" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
   <meta property="og:description" content="Command, don’t prompt. Deterministic, auditable operational AI. Patent pending." />
-  <meta property="og:url" content="https://ucp.omegaui.com" />
+  <meta property="og:url" content="https://syncloudconnect.com/ucp.html" />
   <meta property="og:image" content="https://syncloudconnect.com/assets/og/ucp-og.png" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
   <meta name="twitter:description" content="Operational AI through command-based execution. Patent pending." />
   <meta name="twitter:image" content="https://syncloudconnect.com/assets/og/ucp-og.png" />
+
+  <!-- JSON-LD (Organization + WebPage) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Omega UI, LLC",
+        "url":"https://syncloudconnect.com",
+        "telephone":"+1-941-882-0130",
+        "email":"ucp@syncloudconnect.com",
+        "sameAs":[
+          "https://syncloudconnect.com",
+          "https://syncloudconnect.com/ucp.html",
+          "https://glytch.cloud"
+        ]
+      },
+      {
+        "@type":"WebPage",
+        "name":"Universal Command Protocol (UCP)",
+        "url":"https://syncloudconnect.com/ucp.html",
+        "isPartOf":{
+          "@type":"WebSite",
+          "name":"SynCloud Connect",
+          "url":"https://syncloudconnect.com"
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root{
@@ -109,23 +158,6 @@ cat > ucp.html <<'EOF'
     h3{ margin: 14px 0 8px; font-size: 1.05rem; }
     p{ margin: 10px 0; color: var(--txt); }
     .muted{ color: var(--muted); }
-    table{ width: 100%; border-collapse: collapse; margin-top: 10px; overflow: hidden; border-radius: 14px; border: 1px solid var(--border); background: rgba(0,0,0,.18); }
-    th, td{ padding: 12px 12px; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; font-size: .95rem; }
-    th{ text-align:left; color: #fff; background: rgba(255,255,255,.06); }
-    tr:last-child td{ border-bottom:none; }
-    .tag{ display:inline-block; font-weight: 800; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--muted); font-size: .82rem; }
-    .accordion{ border: 1px solid var(--border); border-radius: 14px; overflow:hidden; background: rgba(0,0,0,.18); }
-    details{ border-top: 1px solid rgba(255,255,255,.08); padding: 0; }
-    details:first-child{ border-top:none; }
-    summary{ cursor:pointer; padding: 14px 14px; font-weight: 800; list-style: none; }
-    summary::-webkit-details-marker{ display:none; }
-    details .content{ padding: 0 14px 14px; color: var(--muted); }
-    .links{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    @media (max-width: 980px){ .links{ grid-template-columns: 1fr; } }
-    .linkCard{ background: rgba(0,0,0,.22); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
-    .linkCard .title{ font-weight: 900; margin-bottom: 4px; }
-    .linkCard .desc{ color: var(--muted); font-size: .95rem; }
-    .linkCard .url{ margin-top: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono"; color: rgba(255,255,255,.85); font-size: .88rem; word-break: break-word; }
     footer{ margin-top: 26px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.12); color: var(--muted); font-size: .92rem; display:flex; align-items:flex-start; justify-content:space-between; gap: 18px; flex-wrap: wrap; }
     .note{ margin-top: 12px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(234,0,234,.28); background: rgba(234,0,234,.08); color: rgba(255,255,255,.92); font-size: .95rem; }
   </style>
@@ -142,10 +174,16 @@ cat > ucp.html <<'EOF'
         </div>
       </div>
 
+         <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5F45BBX4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
       <nav>
-        <a class="btn" href="https://syncloudconnect.com" rel="noopener">Home</a>
-        <a class="btn primary" href="https://ucp.omegaui.com" rel="noopener">Try UCP Live Demo</a>
-        <a class="btn" href="https://syncloudconnect.com/sitemap" rel="noopener">Directory</a>
+        <a class="btn" href="https://syncloudconnect.com" rel="noopener noreferrer">Home</a>
+        <a class="btn primary" href="https://syncloudconnect.com/ucp" rel="noopener noreferrer">Try UCP Live Demo</a>
+        <a class="btn" href="https://syncloudconnect.com/" rel="noopener noreferrer">Directory</a>
+        <a class="btn" href="/sitemap.xml">Sitemap</a>
       </nav>
     </header>
 
@@ -192,15 +230,15 @@ cat > ucp.html <<'EOF'
           </p>
 
           <div class="logos" aria-label="Logos">
-            <img src="/assets/brand/omega-ui-logo.png" alt="Omega UI logo" loading="lazy" />
-            <img src="/assets/brand/ucp-logo.png" alt="UCP logo" loading="lazy" />
-            <img src="/assets/brand/syncloudconnect-logo.png" alt="SynCloud Connect logo" loading="lazy" />
+            <img src="/assets/brand/omega-ui-logo.png" alt="Omega UI logo" loading="lazy" onerror="this.style.display='none'"/>
+            <img src="/assets/brand/ucp-logo.png" alt="UCP logo" loading="lazy" onerror="this.style.display='none'"/>
+            <img src="/assets/brand/syncloudconnect-logo.png" alt="SynCloud Connect logo" loading="lazy" onerror="this.style.display='none'"/>
           </div>
 
           <section>
             <h3>Best next step</h3>
             <p class="muted">Use the live demo to test the “copy/paste” workflow and see command-based execution in action.</p>
-            <a class="btn primary" href="https://ucp.omegaui.com" rel="noopener">Open UCP Live Demo</a>
+            <a class="btn primary" href="https://syncloudconnect.com/ucp" rel="noopener noreferrer">Open UCP Live Demo</a>
           </section>
         </aside>
       </div>
@@ -217,7 +255,7 @@ cat > ucp.html <<'EOF'
       <footer>
         <div>
           <div><strong>Omega UI, LLC</strong></div>
-          <div>Contact: <a href="mailto:ucp@syncloudconnect.com">ucp@syncloudconnect.com</a> • <a href="tel:9418820130">941-882-0130</a></div>
+          <div>Contact: <a href="mailto:ucp@syncloudconnect.com">ucp@syncloudconnect.com</a> • <a href="tel:+19418820130">941-882-0130</a></div>
           <div class="muted">Universal Command Protocol is patent pending. No proprietary implementation details disclosed.</div>
         </div>
         <div class="muted">© <span id="year"></span> Omega UI, LLC</div>
@@ -230,7 +268,3 @@ cat > ucp.html <<'EOF'
   </script>
 </body>
 </html>
-EOF
-git add ucp.html
-git commit -m "Fix ucp.html to static page (UCP investor-safe)"
-git push origin main
