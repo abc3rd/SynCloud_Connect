@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) - REQUIRED -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNLF60E7LE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SNLF60E7LE');
+  </script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b0b0f" />
 
-  <!-- ✅ SEO: Title + Description -->
+  <!-- SEO -->
   <title>Universal Command Protocol (UCP) | Intent Infrastructure by Omega UI, LLC</title>
-  <meta name="description" content="Universal Command Protocol (UCP) is intent infrastructure that shifts operational AI from prompts to commands—improving consistency, governance, and cost efficiency across business workflows. Patent pending." />
-
-  <!-- ✅ Canonical (update to the final public URL for this page) -->
-  <link rel="canonical" href="https://syncloudconnect.com/ucp" />
-
-  <!-- ✅ Robots -->
+  <meta name="description" content="Universal Command Protocol (UCP) is intent infrastructure that shifts operational AI from prompts to commands—improving consistency, governance, and cost efficiency. Patent pending." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
-  <!-- ✅ Open Graph -->
+  <!-- Canonical MUST be ucp.omegaui.com -->
+  <link rel="canonical" href="https://ucp.omegaui.com" />
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
-  <meta property="og:description" content="Move from chat-based prompting to command-based execution. UCP is intent infrastructure for deterministic, auditable operational AI. Patent pending." />
-  <meta property="og:url" content="https://syncloudconnect.com/ucp" />
+  <meta property="og:description" content="Command, don’t prompt. Deterministic, auditable operational AI. Patent pending." />
+  <meta property="og:url" content="https://ucp.omegaui.com" />
   <meta property="og:image" content="https://syncloudconnect.com/assets/og/ucp-og.png" />
 
-  <!-- ✅ Twitter -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
-  <meta name="twitter:description" content="Command, don’t prompt. Deterministic, auditable operational AI with UCP. Patent pending." />
+  <meta name="twitter:description" content="Operational AI through command-based execution. Patent pending." />
   <meta name="twitter:image" content="https://syncloudconnect.com/assets/og/ucp-og.png" />
-
-  <!-- ✅ Performance: preconnect (optional) -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <style>
     :root{
@@ -38,7 +42,6 @@
       --green:#4bce2a;
       --dark:#0b0b0f;
       --gray:#3c3c3c;
-      --warm:#c4653a;
 
       --txt:#e9e9f1;
       --muted:#b7b7c6;
@@ -48,7 +51,6 @@
       --radius: 18px;
       --max: 1120px;
     }
-
     *{ box-sizing:border-box; }
     body{
       margin:0;
@@ -83,7 +85,6 @@
       border-radius: 999px;
       background: rgba(255,255,255,.06);
       border: 1px solid var(--border);
-      box-shadow: none;
       font-weight: 700;
       font-size: .95rem;
     }
@@ -109,10 +110,7 @@
       backdrop-filter: blur(10px);
     }
 
-    .kicker{
-      display:flex; gap: 10px; flex-wrap: wrap;
-      margin-bottom: 12px;
-    }
+    .kicker{ display:flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
     .pill{
       display:inline-flex; align-items:center;
       padding: 6px 10px;
@@ -150,10 +148,7 @@
     .card h3{ margin: 0 0 6px; font-size: 1.02rem; }
     .card p{ margin: 0; color: var(--muted); font-size: .95rem; }
 
-    .logos{
-      display:flex; gap: 10px; flex-wrap: wrap; align-items:center;
-      margin-top: 6px;
-    }
+    .logos{ display:flex; gap: 10px; flex-wrap: wrap; align-items:center; margin-top: 6px; }
     .logos img{
       height: 30px; width: auto; object-fit: contain;
       opacity: .95;
@@ -200,10 +195,7 @@
       overflow:hidden;
       background: rgba(0,0,0,.18);
     }
-    details{
-      border-top: 1px solid rgba(255,255,255,.08);
-      padding: 0;
-    }
+    details{ border-top: 1px solid rgba(255,255,255,.08); padding: 0; }
     details:first-child{ border-top:none; }
     summary{
       cursor:pointer;
@@ -212,10 +204,7 @@
       list-style: none;
     }
     summary::-webkit-details-marker{ display:none; }
-    details .content{
-      padding: 0 14px 14px;
-      color: var(--muted);
-    }
+    details .content{ padding: 0 14px 14px; color: var(--muted); }
 
     .links{
       display:grid;
@@ -231,7 +220,13 @@
     }
     .linkCard .title{ font-weight: 900; margin-bottom: 4px; }
     .linkCard .desc{ color: var(--muted); font-size: .95rem; }
-    .linkCard .url{ margin-top: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono"; color: rgba(255,255,255,.85); font-size: .88rem; word-break: break-word; }
+    .linkCard .url{
+      margin-top: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
+      color: rgba(255,255,255,.85);
+      font-size: .88rem;
+      word-break: break-word;
+    }
 
     footer{
       margin-top: 26px;
@@ -242,7 +237,6 @@
       display:flex; align-items:flex-start; justify-content:space-between; gap: 18px; flex-wrap: wrap;
     }
 
-    /* Small “pop” note (optional) */
     .note{
       margin-top: 12px;
       padding: 12px 14px;
@@ -254,7 +248,7 @@
     }
   </style>
 
-  <!-- ✅ Structured Data: Org + Website + WebPage + FAQ -->
+  <!-- Structured Data (investor-safe; no proprietary mechanics) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -263,44 +257,22 @@
         "@type":"Organization",
         "name":"Omega UI, LLC",
         "url":"https://omegaui.com",
-        "email":"syncloud@omegaui.com",
+        "email":"ucp@syncloudconnect.com",
         "telephone":"941-882-0130",
         "logo":"https://syncloudconnect.com/assets/brand/omega-ui-logo.png"
       },
       {
         "@type":"WebSite",
-        "name":"SynCloud Connect",
-        "url":"https://syncloudconnect.com",
-        "potentialAction":{
-          "@type":"SearchAction",
-          "target":"https://syncloudconnect.com/search?q={search_term_string}",
-          "query-input":"required name=search_term_string"
-        }
+        "name":"Universal Command Protocol",
+        "url":"https://ucp.omegaui.com"
       },
       {
         "@type":"WebPage",
         "name":"Universal Command Protocol (UCP) | Intent Infrastructure",
-        "url":"https://syncloudconnect.com/ucp",
-        "about":[{"@type":"Thing","name":"Intent Infrastructure"},{"@type":"Thing","name":"Universal Command Protocol"}]
-      },
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {
-            "@type":"Question",
-            "name":"How does UCP help reduce cost?",
-            "acceptedAnswer":{"@type":"Answer","text":"By reducing redundant back-and-forth prompting and improving execution consistency, which can lower operational overhead and repeated processing in common workflows."}
-          },
-          {
-            "@type":"Question",
-            "name":"Is UCP a chatbot?",
-            "acceptedAnswer":{"@type":"Answer","text":"No. UCP is positioned as intent infrastructure for operational execution—designed for consistency, governance, and repeatable outcomes rather than conversation."}
-          },
-          {
-            "@type":"Question",
-            "name":"Can I try it live?",
-            "acceptedAnswer":{"@type":"Answer","text":"Yes. Use the live demo links on this page to test the copy/paste workflow and see how command-based execution compares to prompting."}
-          }
+        "url":"https://ucp.omegaui.com",
+        "about":[
+          {"@type":"Thing","name":"Intent Infrastructure"},
+          {"@type":"Thing","name":"Universal Command Protocol"}
         ]
       }
     ]
@@ -312,7 +284,6 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <!-- TODO: set correct logo paths in your repo -->
         <img src="/assets/brand/syncloudconnect-icon.png" alt="SynCloud Connect logo" loading="eager" />
         <div>
           <div class="name">SynCloud Connect</div>
@@ -321,7 +292,6 @@
       </div>
 
       <nav>
-        <!-- TODO: replace hrefs with your real deployed URLs -->
         <a class="btn" href="https://syncloudconnect.com" rel="noopener">Home</a>
         <a class="btn primary" href="https://ucp.omegaui.com" rel="noopener">Try UCP Live Demo</a>
         <a class="btn" href="https://syncloudconnect.com/sitemap" rel="noopener">Directory</a>
@@ -345,7 +315,7 @@
           </p>
 
           <div class="note">
-            <strong>Patent Pending Notice:</strong> UCP is patent pending. This page describes the value and outcomes without disclosing proprietary implementation details.
+            <strong>Patent Pending Notice:</strong> Universal Command Protocol is patent pending. This page describes the value and outcomes without disclosing proprietary implementation details.
           </div>
 
           <div class="featureGrid" aria-label="Key features">
@@ -354,7 +324,7 @@
               <p>Replace open-ended prompting with structured intent and repeatable execution outcomes.</p>
             </div>
             <div class="card">
-              <h3>Governance & Auditability</h3>
+              <h3>Governance &amp; Auditability</h3>
               <p>Intent can be managed, reviewed, and aligned to operational policy and compliance needs.</p>
             </div>
             <div class="card">
@@ -371,7 +341,6 @@
           </p>
 
           <div class="logos" aria-label="Logos">
-            <!-- TODO: drop your finalized logos in /assets/brand/ and update the filenames -->
             <img src="/assets/brand/omega-ui-logo.png" alt="Omega UI logo" loading="lazy" />
             <img src="/assets/brand/ucp-logo.png" alt="UCP logo" loading="lazy" />
             <img src="/assets/brand/syncloudconnect-logo.png" alt="SynCloud Connect logo" loading="lazy" />
@@ -441,7 +410,7 @@
       <section class="panel">
         <h2>What Universal Command Protocol is designed to do</h2>
         <p>
-          UCP is positioned as a standard for operational intent execution—built to support repeatability, control, and consistent outcomes across business workflows.
+          Universal Command Protocol is positioned as a standard for operational intent execution—built to support repeatability, control, and consistent outcomes across business workflows.
           This page focuses on outcomes and benefits, not proprietary mechanics.
         </p>
 
@@ -455,14 +424,12 @@
       </section>
 
       <section class="panel">
-        <h2>Deployed sites & tools</h2>
+        <h2>Deployed sites &amp; tools</h2>
         <p class="muted">
           Link out to the public-facing demos, directories, and tools you’ve deployed. This strengthens internal linking and helps search engines map your ecosystem.
         </p>
 
         <div class="links">
-          <!-- ✅ Replace these with your real links. Keep titles + short descriptions. -->
-
           <div class="linkCard">
             <div class="title">UCP Live Demo</div>
             <div class="desc">Try the copy/paste workflow live.</div>
@@ -475,7 +442,6 @@
             <div class="url"><a href="https://syncloudconnect.com/sitemap" rel="noopener">https://syncloudconnect.com/sitemap</a></div>
           </div>
 
-          <!-- TODO: Add the rest of your deployed URLs below (examples placeholders). -->
           <div class="linkCard">
             <div class="title">UCP Sales + Guide</div>
             <div class="desc">Investor-safe explainer, comparisons, and FAQ.</div>
@@ -526,8 +492,12 @@
       <footer>
         <div>
           <div><strong>Omega UI, LLC</strong></div>
-          <div>Contact: <a href="mailto:syncloud@omegaui.com">syncloud@omegaui.com</a> • <a href="tel:9418820130">941-882-0130</a></div>
-          <div class="muted">UCP is patent pending. This page is informational and does not disclose proprietary implementation details.</div>
+          <div>
+            Contact:
+            <a href="mailto:ucp@syncloudconnect.com">ucp@syncloudconnect.com</a>
+            • <a href="tel:9418820130">941-882-0130</a>
+          </div>
+          <div class="muted">Universal Command Protocol is patent pending. No proprietary implementation details disclosed.</div>
         </div>
         <div class="muted">© <span id="year"></span> Omega UI, LLC</div>
       </footer>
