@@ -1,3 +1,4 @@
+cat > ucp.html <<'EOF'
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,22 +15,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#0b0b0f" />
 
-  <!-- SEO -->
   <title>Universal Command Protocol (UCP) | Intent Infrastructure by Omega UI, LLC</title>
   <meta name="description" content="Universal Command Protocol (UCP) is intent infrastructure that shifts operational AI from prompts to commands—improving consistency, governance, and cost efficiency. Patent pending." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
-
-  <!-- Canonical MUST be ucp.omegaui.com -->
   <link rel="canonical" href="https://ucp.omegaui.com" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
   <meta property="og:description" content="Command, don’t prompt. Deterministic, auditable operational AI. Patent pending." />
   <meta property="og:url" content="https://ucp.omegaui.com" />
   <meta property="og:image" content="https://syncloudconnect.com/assets/og/ucp-og.png" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Universal Command Protocol (UCP) | Intent Infrastructure" />
   <meta name="twitter:description" content="Operational AI through command-based execution. Patent pending." />
@@ -42,7 +38,6 @@
       --green:#4bce2a;
       --dark:#0b0b0f;
       --gray:#3c3c3c;
-
       --txt:#e9e9f1;
       --muted:#b7b7c6;
       --card: rgba(255,255,255,.06);
@@ -65,42 +60,25 @@
     a{ color: inherit; text-decoration:none; }
     a:hover{ text-decoration: underline; }
     .wrap{ max-width: var(--max); margin: 0 auto; padding: 28px 18px 70px; }
-
-    header{
-      display:flex; align-items:center; justify-content:space-between; gap: 18px;
-      padding: 14px 0 26px;
-    }
-    .brand{
-      display:flex; align-items:center; gap: 12px;
-      min-width: 220px;
-    }
+    header{ display:flex; align-items:center; justify-content:space-between; gap: 18px; padding: 14px 0 26px; }
+    .brand{ display:flex; align-items:center; gap: 12px; min-width: 220px; }
     .brand img{ width: 42px; height: 42px; object-fit: contain; }
     .brand .name{ font-weight: 800; letter-spacing: .2px; }
     .brand .sub{ color: var(--muted); font-size: .92rem; margin-top:2px; }
-
     nav{ display:flex; gap: 10px; flex-wrap: wrap; justify-content:flex-end; }
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
-      padding: 10px 14px;
-      border-radius: 999px;
+      padding: 10px 14px; border-radius: 999px;
       background: rgba(255,255,255,.06);
       border: 1px solid var(--border);
-      font-weight: 700;
-      font-size: .95rem;
+      font-weight: 700; font-size: .95rem;
     }
     .btn.primary{
       background: linear-gradient(90deg, rgba(234,0,234,.9), rgba(38,153,254,.85));
       border-color: rgba(255,255,255,.18);
     }
-
-    .hero{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 18px;
-      margin-top: 8px;
-    }
+    .hero{ display:grid; grid-template-columns: 1.2fr .8fr; gap: 18px; margin-top: 8px; }
     @media (max-width: 980px){ .hero{ grid-template-columns: 1fr; } }
-
     .panel{
       background: var(--card);
       border: 1px solid var(--border);
@@ -109,175 +87,48 @@
       padding: 22px;
       backdrop-filter: blur(10px);
     }
-
     .kicker{ display:flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
     .pill{
       display:inline-flex; align-items:center;
-      padding: 6px 10px;
-      border-radius: 999px;
+      padding: 6px 10px; border-radius: 999px;
       border: 1px solid var(--border);
       background: rgba(0,0,0,.22);
-      color: var(--muted);
-      font-size: .86rem;
-      font-weight: 700;
+      color: var(--muted); font-size: .86rem; font-weight: 700;
     }
-
-    h1{
-      margin: 10px 0 10px;
-      font-size: clamp(2.0rem, 3.6vw, 3.1rem);
-      line-height: 1.08;
-      letter-spacing: -0.6px;
-    }
+    h1{ margin: 10px 0 10px; font-size: clamp(2.0rem, 3.6vw, 3.1rem); line-height: 1.08; letter-spacing: -0.6px; }
     .lead{ color: var(--muted); font-size: 1.05rem; margin-top: 8px; }
-
-    .featureGrid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 16px;
-    }
+    .featureGrid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
     @media (max-width: 980px){ .featureGrid{ grid-template-columns: 1fr; } }
-
-    .card{
-      background: rgba(0,0,0,.22);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px;
-      min-height: 108px;
-    }
+    .card{ background: rgba(0,0,0,.22); border: 1px solid var(--border); border-radius: 14px; padding: 14px; min-height: 108px; }
     .card h3{ margin: 0 0 6px; font-size: 1.02rem; }
     .card p{ margin: 0; color: var(--muted); font-size: .95rem; }
-
     .logos{ display:flex; gap: 10px; flex-wrap: wrap; align-items:center; margin-top: 6px; }
-    .logos img{
-      height: 30px; width: auto; object-fit: contain;
-      opacity: .95;
-      filter: drop-shadow(0 6px 18px rgba(0,0,0,.35));
-    }
-
+    .logos img{ height: 30px; width: auto; object-fit: contain; opacity: .95; filter: drop-shadow(0 6px 18px rgba(0,0,0,.35)); }
     section{ margin-top: 18px; }
     h2{ margin: 0 0 10px; font-size: 1.35rem; letter-spacing:-.2px; }
     h3{ margin: 14px 0 8px; font-size: 1.05rem; }
     p{ margin: 10px 0; color: var(--txt); }
     .muted{ color: var(--muted); }
-
-    table{
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-      overflow: hidden;
-      border-radius: 14px;
-      border: 1px solid var(--border);
-      background: rgba(0,0,0,.18);
-    }
-    th, td{
-      padding: 12px 12px;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      vertical-align: top;
-      font-size: .95rem;
-    }
+    table{ width: 100%; border-collapse: collapse; margin-top: 10px; overflow: hidden; border-radius: 14px; border: 1px solid var(--border); background: rgba(0,0,0,.18); }
+    th, td{ padding: 12px 12px; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; font-size: .95rem; }
     th{ text-align:left; color: #fff; background: rgba(255,255,255,.06); }
     tr:last-child td{ border-bottom:none; }
-    .tag{
-      display:inline-block;
-      font-weight: 800;
-      padding: 4px 9px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-size: .82rem;
-    }
-
-    .accordion{
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow:hidden;
-      background: rgba(0,0,0,.18);
-    }
+    .tag{ display:inline-block; font-weight: 800; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,.05); color: var(--muted); font-size: .82rem; }
+    .accordion{ border: 1px solid var(--border); border-radius: 14px; overflow:hidden; background: rgba(0,0,0,.18); }
     details{ border-top: 1px solid rgba(255,255,255,.08); padding: 0; }
     details:first-child{ border-top:none; }
-    summary{
-      cursor:pointer;
-      padding: 14px 14px;
-      font-weight: 800;
-      list-style: none;
-    }
+    summary{ cursor:pointer; padding: 14px 14px; font-weight: 800; list-style: none; }
     summary::-webkit-details-marker{ display:none; }
     details .content{ padding: 0 14px 14px; color: var(--muted); }
-
-    .links{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
+    .links{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     @media (max-width: 980px){ .links{ grid-template-columns: 1fr; } }
-    .linkCard{
-      background: rgba(0,0,0,.22);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px;
-    }
+    .linkCard{ background: rgba(0,0,0,.22); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
     .linkCard .title{ font-weight: 900; margin-bottom: 4px; }
     .linkCard .desc{ color: var(--muted); font-size: .95rem; }
-    .linkCard .url{
-      margin-top: 8px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
-      color: rgba(255,255,255,.85);
-      font-size: .88rem;
-      word-break: break-word;
-    }
-
-    footer{
-      margin-top: 26px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,.12);
-      color: var(--muted);
-      font-size: .92rem;
-      display:flex; align-items:flex-start; justify-content:space-between; gap: 18px; flex-wrap: wrap;
-    }
-
-    .note{
-      margin-top: 12px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(234,0,234,.28);
-      background: rgba(234,0,234,.08);
-      color: rgba(255,255,255,.92);
-      font-size: .95rem;
-    }
+    .linkCard .url{ margin-top: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono"; color: rgba(255,255,255,.85); font-size: .88rem; word-break: break-word; }
+    footer{ margin-top: 26px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.12); color: var(--muted); font-size: .92rem; display:flex; align-items:flex-start; justify-content:space-between; gap: 18px; flex-wrap: wrap; }
+    .note{ margin-top: 12px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(234,0,234,.28); background: rgba(234,0,234,.08); color: rgba(255,255,255,.92); font-size: .95rem; }
   </style>
-
-  <!-- Structured Data (investor-safe; no proprietary mechanics) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "name":"Omega UI, LLC",
-        "url":"https://omegaui.com",
-        "email":"ucp@syncloudconnect.com",
-        "telephone":"941-882-0130",
-        "logo":"https://syncloudconnect.com/assets/brand/omega-ui-logo.png"
-      },
-      {
-        "@type":"WebSite",
-        "name":"Universal Command Protocol",
-        "url":"https://ucp.omegaui.com"
-      },
-      {
-        "@type":"WebPage",
-        "name":"Universal Command Protocol (UCP) | Intent Infrastructure",
-        "url":"https://ucp.omegaui.com",
-        "about":[
-          {"@type":"Thing","name":"Intent Infrastructure"},
-          {"@type":"Thing","name":"Universal Command Protocol"}
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 
 <body>
@@ -361,142 +212,12 @@
           Instead of re-explaining intent through chat prompts each time, intent infrastructure enables intent to be defined, validated, governed,
           and executed consistently across systems.
         </p>
-
-        <h3>Why prompting struggles in production</h3>
-        <ul class="muted">
-          <li>Same prompt can produce different outcomes</li>
-          <li>Context must be resent and reprocessed repeatedly</li>
-          <li>Workflows become harder to audit and control</li>
-          <li>Operational costs rise with repeated interactions</li>
-        </ul>
-
-        <h2>Prompting vs Agents vs Intent Infrastructure</h2>
-        <p class="muted">A practical comparison for business execution reliability:</p>
-
-        <table>
-          <tr>
-            <th>Dimension</th>
-            <th>Prompting</th>
-            <th>Agent Frameworks</th>
-            <th>Intent Infrastructure</th>
-          </tr>
-          <tr>
-            <td><span class="tag">Consistency</span></td>
-            <td>Variable</td>
-            <td>Medium</td>
-            <td>High (deterministic)</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Governance</span></td>
-            <td>Difficult</td>
-            <td>Partial</td>
-            <td>Native</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Auditability</span></td>
-            <td>Poor</td>
-            <td>Limited</td>
-            <td>Strong</td>
-          </tr>
-          <tr>
-            <td><span class="tag">Operational Cost</span></td>
-            <td>High overhead</td>
-            <td>Medium</td>
-            <td>Lower overhead over repeated workflows</td>
-          </tr>
-        </table>
-      </section>
-
-      <section class="panel">
-        <h2>What Universal Command Protocol is designed to do</h2>
-        <p>
-          Universal Command Protocol is positioned as a standard for operational intent execution—built to support repeatability, control, and consistent outcomes across business workflows.
-          This page focuses on outcomes and benefits, not proprietary mechanics.
-        </p>
-
-        <h3>Common usage examples</h3>
-        <ul class="muted">
-          <li>Recurring reporting workflows with consistent output formats</li>
-          <li>Operational checklists executed the same way every time</li>
-          <li>Controlled automation across CRM, messaging, and data tools</li>
-          <li>Governable AI execution for internal teams and customers</li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <h2>Deployed sites &amp; tools</h2>
-        <p class="muted">
-          Link out to the public-facing demos, directories, and tools you’ve deployed. This strengthens internal linking and helps search engines map your ecosystem.
-        </p>
-
-        <div class="links">
-          <div class="linkCard">
-            <div class="title">UCP Live Demo</div>
-            <div class="desc">Try the copy/paste workflow live.</div>
-            <div class="url"><a href="https://ucp.omegaui.com" rel="noopener">https://ucp.omegaui.com</a></div>
-          </div>
-
-          <div class="linkCard">
-            <div class="title">SynCloud Connect Directory</div>
-            <div class="desc">Canonical directory for public demos, products, and tools.</div>
-            <div class="url"><a href="https://syncloudconnect.com/sitemap" rel="noopener">https://syncloudconnect.com/sitemap</a></div>
-          </div>
-
-          <div class="linkCard">
-            <div class="title">UCP Sales + Guide</div>
-            <div class="desc">Investor-safe explainer, comparisons, and FAQ.</div>
-            <div class="url"><a href="https://syncloudconnect.com/ucp" rel="noopener">https://syncloudconnect.com/ucp</a></div>
-          </div>
-
-          <div class="linkCard">
-            <div class="title">Contact</div>
-            <div class="desc">Connect with Omega UI, LLC.</div>
-            <div class="url"><a href="https://syncloudconnect.com/contact" rel="noopener">https://syncloudconnect.com/contact</a></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel">
-        <h2>FAQ</h2>
-        <div class="accordion" role="region" aria-label="Frequently Asked Questions">
-          <details>
-            <summary>How is this going to save money?</summary>
-            <div class="content">
-              By reducing repetitive back-and-forth prompting, standardizing execution, and improving workflow consistency—organizations can cut rework and reduce operational overhead across repeated tasks.
-            </div>
-          </details>
-
-          <details>
-            <summary>What does this do for a home user?</summary>
-            <div class="content">
-              It simplifies recurring tasks into reliable commands—less time “prompting,” fewer retries, and more predictable results for daily workflows.
-            </div>
-          </details>
-
-          <details>
-            <summary>Is there an alternative I can test and compare?</summary>
-            <div class="content">
-              Yes. You can compare your normal prompt workflow against the command-based workflow in the live demo and evaluate consistency, time-to-result, and operational clarity.
-            </div>
-          </details>
-
-          <details>
-            <summary>How do I know the commands are right?</summary>
-            <div class="content">
-              The goal is reproducibility: commands can be validated, reviewed, and improved over time. You can also run side-by-side tests to confirm consistent outcomes.
-            </div>
-          </details>
-        </div>
       </section>
 
       <footer>
         <div>
           <div><strong>Omega UI, LLC</strong></div>
-          <div>
-            Contact:
-            <a href="mailto:ucp@syncloudconnect.com">ucp@syncloudconnect.com</a>
-            • <a href="tel:9418820130">941-882-0130</a>
-          </div>
+          <div>Contact: <a href="mailto:ucp@syncloudconnect.com">ucp@syncloudconnect.com</a> • <a href="tel:9418820130">941-882-0130</a></div>
           <div class="muted">Universal Command Protocol is patent pending. No proprietary implementation details disclosed.</div>
         </div>
         <div class="muted">© <span id="year"></span> Omega UI, LLC</div>
@@ -509,3 +230,7 @@
   </script>
 </body>
 </html>
+EOF
+git add ucp.html
+git commit -m "Fix ucp.html to static page (UCP investor-safe)"
+git push origin main
