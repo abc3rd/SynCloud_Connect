@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Connect - All-in-One Business Growth Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Black background */
+            color: #CAD5DF; /* Light blue-gray text */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .text-primary { color: #00B0C8; } /* Cyan */
+        .bg-primary { background-color: #00B0C8; }
+        .text-secondary { color: #445875; } /* Dark blue-gray */
+        .bg-secondary { background-color: #445875; }
+        .text-accent-1 { color: #5ED6B6; } /* Teal/Mint Green */
+        .bg-accent-1 { background-color: #5ED6B6; }
+        .text-accent-2 { color: #BC0C9B; } /* Magenta/Purple */
+        .bg-accent-2 { background-color: #BC0C9B; }
+        .text-accent-3 { color: #008BF1; } /* Bright Blue */
+        .bg-accent-3 { background-color: #008BF1; }
+        .text-light { color: #FFF0CA; } /* Light yellow/cream */
+        .bg-light { background-color: #FFF0CA; }
+
+        /* Custom Tailwind config for colors */
+        :root {
+            --color-cad5df: #CAD5DF;
+            --color-00b0c8: #00B0C8;
+            --color-fff0ca: #FFF0CA;
+            --color-445875: #445875;
+            --color-5ed6b6: #5ED6B6;
+            --color-00b6cc: #00B6CC;
+            --color-bc0c9b: #BC0C9B;
+            --color-008bf1: #008BF1;
+            --color-000000: #000000;
+        }
+
+        .tailwind-config {
+            display: none; /* Hide this element, it's just for Tailwind config */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cc-light-gray': 'var(--color-cad5df)',
+                        'cc-cyan': 'var(--color-00b0c8)',
+                        'cc-cream': 'var(--color-fff0ca)',
+                        'cc-dark-blue-gray': 'var(--color-445875)',
+                        'cc-teal': 'var(--color-5ed6b6)',
+                        'cc-darker-cyan': 'var(--color-00b6cc)',
+                        'cc-magenta': 'var(--color-bc0c9b)',
+                        'cc-bright-blue': 'var(--color-008bf1)',
+                        'cc-black': 'var(--color-000000)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cc-black text-cc-light-gray min-h-screen flex flex-col items-center py-8 px-4">
+
+    <!-- Header -->
+    <header class="w-full text-center mb-12">
+        <h1 class="text-5xl md:text-6xl font-bold text-cc-cyan mb-4 rounded-lg p-2">CLOUD CONNECT</h1>
+        <p class="text-2xl md:text-3xl font-light text-cc-light-gray">Your All-in-One Business Growth Platform</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full container flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
+        <div class="md:w-1/2 text-center md:text-left">
+            <h2 class="text-4xl font-bold text-cc-teal mb-4 rounded-lg p-2">Streamline, Automate, Grow.</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Cloud Connect provides everything you need to manage your business, attract leads, and convert customers, all within a single, intuitive platform. Stop juggling multiple tools and start focusing on what matters most: your growth.
+            </p>
+            <a href="#pricing" class="inline-block bg-cc-bright-blue text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-cc-magenta transition duration-300 ease-in-out">
+                Choose Your Plan Today!
+            </a>
+        </div>
+        <div class="md:w-1/2 flex justify-center items-center">
+            <!-- Placeholder for a relevant image or graphic -->
+            <img src="https://placehold.co/600x400/445875/FFF0CA?text=Cloud+Connect+Dashboard" alt="Cloud Connect Dashboard Mockup" class="rounded-xl shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="w-full container mb-16">
+        <h2 class="text-4xl font-bold text-center text-cc-cyan mb-10 rounded-lg p-2">Comprehensive Features for Every Business Need</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">CRM & Sales Pipelines</h3>
+                <p class="text-cc-light-gray">Manage your contacts, track leads, and streamline your sales process from prospecting to closing.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Website & Funnel Builder</h3>
+                <p class="text-cc-light-gray">Create stunning websites and high-converting sales funnels with our intuitive drag-and-drop builder.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Email & SMS Marketing</h3>
+                <p class="text-cc-light-gray">Launch powerful email campaigns and two-way SMS conversations to engage your audience.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Automated Workflows</h3>
+                <p class="text-cc-light-gray">Automate lead nurturing, follow-ups, and customer onboarding to save time and increase efficiency.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Booking & Appointments</h3>
+                <p class="text-cc-light-gray">Simplify scheduling for your clients with integrated booking calendars.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Reputation Management</h3>
+                <p class="text-cc-light-gray">Monitor and improve your online reputation with integrated tools for reviews and testimonials.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="w-full container mb-16">
+        <h2 class="text-4xl font-bold text-center text-cc-teal mb-10 rounded-lg p-2">The Cloud Connect Advantage: Unbeatable Value</h2>
+        <div class="overflow-x-auto rounded-xl shadow-lg">
+            <table class="w-full text-left whitespace-nowrap">
+                <thead class="bg-cc-dark-blue-gray text-cc-cream">
+                    <tr>
+                        <th class="py-3 px-4 rounded-tl-xl">Feature</th>
+                        <th class="py-3 px-4">Cloud Connect</th>
+                        <th class="py-3 px-4 rounded-tr-xl">Independent Tools (Avg. Monthly Cost)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">CRM & Pipeline Management</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$99</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Unlimited Sales Funnels</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$297</td>
+                    </tr>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">Website Builder</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$23</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Email Marketing</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$74</td>
+                    </tr>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">2-Way SMS Marketing</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$99</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Booking & Appointments</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$29</td>
+                    </tr>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">Workflow Automations</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$73</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Courses/Products</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$99</td>
+                    </tr>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">Call Tracking</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$30</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Reputation Management</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$49</td>
+                    </tr>
+                    <tr class="bg-cc-black border-b border-cc-dark-blue-gray">
+                        <td class="py-3 px-4">Tracking & Analytics</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$14</td>
+                    </tr>
+                    <tr class="bg-cc-dark-blue-gray border-b border-cc-black">
+                        <td class="py-3 px-4">Communities</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4">$47</td>
+                    </tr>
+                    <tr class="bg-cc-black">
+                        <td class="py-3 px-4 rounded-bl-xl">Document Signing</td>
+                        <td class="py-3 px-4 text-cc-teal">✔ Included</td>
+                        <td class="py-3 px-4 rounded-br-xl">$47</td>
+                    </tr>
+                </tbody>
+                <tfoot class="bg-cc-dark-blue-gray text-cc-cream font-bold">
+                    <tr>
+                        <td class="py-4 px-4 text-xl" colspan="2">Total Independent Tools Cost:</td>
+                        <td class="py-4 px-4 text-xl">$1612/month</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 px-4 text-xl rounded-bl-xl" colspan="2">Cloud Connect Starting From:</td>
+                        <td class="py-4 px-4 text-xl text-cc-bright-blue rounded-br-xl">$97/month</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="w-full container mb-16">
+        <h2 class="text-4xl font-bold text-center text-cc-cyan mb-10 rounded-lg p-2">Select Your Cloud Connect Plan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Basic Plan -->
+            <div class="bg-cc-dark-blue-gray p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                <h3 class="text-3xl font-bold text-cc-cream mb-4">Basic Plan</h3>
+                <p class="text-5xl font-extrabold text-cc-teal mb-4">$97<span class="text-2xl font-normal text-cc-light-gray">/month</span></p>
+                <p class="text-cc-light-gray mb-6">Get started with our affordable starter plan for essential features and seamless onboarding.</p>
+                <ul class="text-cc-light-gray text-left w-full mb-8 space-y-2">
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Unlimited Contacts & Users</li>
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Unlimited Sub-Accounts</li>
+                    <!-- Add more basic features if known -->
+                </ul>
+                <button class="bg-cc-bright-blue text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-cc-magenta transition duration-300 ease-in-out w-full">
+                    Choose Basic
+                </button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="bg-cc-dark-blue-gray p-8 rounded-xl shadow-lg flex flex-col items-center text-center border-2 border-cc-bright-blue">
+                <h3 class="text-3xl font-bold text-cc-cream mb-4">Pro Plan</h3>
+                <p class="text-5xl font-extrabold text-cc-teal mb-4">$197<span class="text-2xl font-normal text-cc-light-gray">/month</span></p>
+                <p class="text-cc-light-gray mb-6">Boundless features. Limitless potential. Choose our most popular option without compromise.</p>
+                <ul class="text-cc-light-gray text-left w-full mb-8 space-y-2">
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Unlimited Sub-Accounts</li>
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Enhanced Features & Support</li>
+                    <!-- Add more pro features if known -->
+                </ul>
+                <button class="bg-cc-bright-blue text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-cc-magenta transition duration-300 ease-in-out w-full">
+                    Choose Pro
+                </button>
+            </div>
+
+            <!-- Elite Plan -->
+            <div class="bg-cc-dark-blue-gray p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+                <h3 class="text-3xl font-bold text-cc-cream mb-4">Elite Plan</h3>
+                <p class="text-5xl font-extrabold text-cc-teal mb-4">$297<span class="text-2xl font-normal text-cc-light-gray">/month</span></p>
+                <p class="text-cc-light-gray mb-6">Take your business to the next level with our ultimate plan, granting you an immense range of advanced features.</p>
+                <ul class="text-cc-light-gray text-left w-full mb-8 space-y-2">
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Unlimited SaaS Accounts</li>
+                    <li class="flex items-center"><span class="text-cc-teal mr-2">✔</span> Unlimited SpaS Accounts</li>
+                    <!-- Add more elite features if known -->
+                </ul>
+                <button class="bg-cc-bright-blue text-white font-bold py-3 px-8 rounded-full shadow-md hover:bg-cc-magenta transition duration-300 ease-in-out w-full">
+                    Choose Elite
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Cloud Connect Section -->
+    <section class="w-full container mb-16">
+        <h2 class="text-4xl font-bold text-center text-cc-teal mb-10 rounded-lg p-2">Why Choose Cloud Connect?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Unified Inbox & AI Outreach</h3>
+                <p class="text-cc-light-gray">Manage all communications from one place with AI-driven insights for sales and nurturing.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Instant Data Exports</h3>
+                <p class="text-cc-light-gray">Quickly filter and download your critical business data for reporting and analysis.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">Built-in Secure AI</h3>
+                <p class="text-cc-light-gray">Leverage compliant and secure artificial intelligence features to optimize your operations.</p>
+            </div>
+            <div class="bg-cc-dark-blue-gray p-6 rounded-xl shadow-lg">
+                <h3 class="text-2xl font-semibold text-cc-cream mb-3">White-Label Ready</h3>
+                <p class="text-cc-light-gray">Perfect for agencies looking to offer a powerful, branded solution to their clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Footer -->
+    <footer class="w-full text-center py-8 bg-cc-dark-blue-gray rounded-t-xl">
+        <h2 class="text-3xl font-bold text-cc-cream mb-4">Ready to Transform Your Business?</h2>
+        <p class="text-lg text-cc-light-gray mb-6">Join thousands of businesses already thriving with Cloud Connect.</p>
+        <a href="#pricing" class="inline-block bg-cc-bright-blue text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-cc-magenta transition duration-300 ease-in-out text-xl">
+            Claim Your Plan Now!
+        </a>
+        <p class="text-sm text-cc-light-gray mt-8">&copy; 2025 Cloud Connect. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
